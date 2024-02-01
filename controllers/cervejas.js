@@ -45,7 +45,7 @@ const DeletarCerveja = async (req,res) => {
             return res.status(400).json({error: "Id não informado" })
         }
         const resultado = await Cerveja.destroy({ where: { id } })
-        res.status(200).send({ message: 'Cerveja deletada com sucesso', data: resultado })
+        res.status(200).send({ message: 'Cerveja deletada com sucesso'})
  } catch (erro){
     res.status(500).send({ error: 'Erro ao excluir a cerveja'})
  }

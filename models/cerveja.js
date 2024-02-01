@@ -17,7 +17,7 @@ const Cerveja = sequelize.define('cerveja', {
         type: DataTypes.STRING,
         allowNull: false
     },abv: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.DECIMAL,
         allowNull: false
     }
 },{
